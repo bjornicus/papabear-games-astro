@@ -1,27 +1,33 @@
 ---
 import { Image } from 'astro:assets';
-import papabear_hero from '../images/PapaBearLogo-tight.png';
+import spaceboots_hero from '../images/spaceboots_hero.png';
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Papa Bear Games.">
 	<main>
-		<Image src={papabear_hero} alt="Papa Bear Games Logo" />
+		<Image src={spaceboots_hero} alt="" />
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="/spaceboots"
-				title="SpaceBoots"
-				body="Couch multiplayer 2D zero gravity twin stick shooter."
+				href="https://store.steampowered.com/app/2104390/SpaceBoots/"
+				title="SpaceBoots on Steam"
+				body=""
 			/>
 			<Card
-				href="https://www.youtube.com/watch?v=ybcZgTcK3fs"
-				title="Next Game"
-				body="This one doesn't have a name yet"
+				href="https://www.xbox.com/en-us/games/store/spaceboots/9pks525fvgmr"
+				title="SpaceBoots on Xbox"
+				body=""
+			/>
+			<Card
+				href="https://apps.microsoft.com/detail/9pks525fvgmr"
+				title="SpaceBoots on Windows Store"
+				body=""
 			/>
 		</ul>
 	</main>
 </Layout>
+
 
 <style>
 	main {
