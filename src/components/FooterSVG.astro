@@ -1,0 +1,26 @@
+---
+interface Props {
+	title: string;
+	path: string;
+	href: string;
+	viewBox: string;
+}
+
+const { href, title, path, viewBox } = Astro.props;
+---
+
+<a href={href} target="_blank">
+	<svg
+		viewBox={viewBox}
+		aria-hidden="true"
+		class="h-6 w-6"
+		fill-rule="evenodd"
+		clip-rule="evenodd"
+		>
+		<title>{title}</title>
+		<path
+			fill="#fff"
+			d={path}>
+		</path>
+	</svg>
+</a>
