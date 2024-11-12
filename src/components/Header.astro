@@ -17,10 +17,11 @@ import NavItem from "../components/NavItem.astro";
         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <NavItem href="/" title="Home"/>
             <NavItem href="/spaceboots" title="SpaceBoots"/>
-            <NavItem href="/" title="New Game"/>
-
+            <NavItem href="/new_game" title="New Game"/>
         </ul>
       </div>
+      <!-- adds a third element in the flexbox at md and large so the menu items end up centered  -->
+      <div class="hidden md:block"/> 
     </div>
   </nav>
   
